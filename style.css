@@ -1,6 +1,6 @@
 @font-face {
     font-family: norse-bold;
-    src: url(/fonts/Norse-Bold.otf);
+    src: url(./fonts/Norse-Bold.otf);
 }
 
 body{
@@ -23,73 +23,109 @@ body{
 .title-side > .title-logo {
     display: flex;
     position:relative;
-    top: 15vw;
+    top: 15%;
     flex-direction: row;
     text-align: center;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     height: 15%;
+    padding-block: 2%;
 }
 
 .title-logo > .logo {
-
+    height: auto;
+    width: auto;
+    align-content: center;
 }
 
 .title-logo > .title {
+    align-content:center;
+    font-size: 6rem;
+    margin: 0;
 
 }
 
 .title-side > .img-info {
     position:relative;
-    top: 38vw;
+    top: 35vw;
     text-align: center;
 }
 
 .title-side{
     display: flex;
     flex-direction: column;
-    background-image: url(/images/menu.avif);
-    background-position: absolute;
+    background-image: url(./images/menu.avif);
+
+    background-repeat: no-repeat;
     background-size:cover;
-    width: 30vw;
+    width: 35vw;
     color: white;
 }
 
 .form-side{
     text-overflow: ellipsis;
-    width: 65vw;
+    background-color: #fafafa;
     justify-content: center;
     align-content: center;
+    width: 65vw;
 }
 
 .form-side > #form-head {
-    padding: 2vw;
+    padding-inline: 2vw;
     text-align:left;
     justify-content: center;
-    align-content: end;
+    align-content: center;
+    width: 30vw;
+    height: 35vh;
 }
 
 .form-side > form > #form-top {
-    padding: 2vw;
-    height: 50%;
+    height: 30vh;
+    align-content: center;
+    padding-inline: 2vw;
 }
 
 .form-side > form > #form-bottom {
-    padding: 2vw;
+    height: 30vh;
     justify-content: center;
     align-content:baseline;
-    background-color: aqua;
+    padding-inline: 2vw;
 }
 
 #form-top > #inputContainer {
     display: flex;
     flex-direction: row;
-    gap: 5vw;
-
+    gap: 4vw;
 }
 
 #form-top > #inputContainer > #inputBox {
     display: flex;
     flex-direction: column;
-    width: 20vw;
+    width: 30%;
+}
 
+#form-top > #inputContainer > #inputBox input {
+    border: solid #E5E7EB;
+    border-radius: 3%;
+    height: 3vh;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 5px 5px 5px #858688;
+}
+
+#create-Account-btn {
+    background-color: #596D48;
+    border: solid, #596D48;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10%;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
 }
