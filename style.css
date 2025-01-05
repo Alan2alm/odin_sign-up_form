@@ -110,11 +110,11 @@ body{
     height: 3vh;
 }
 
-input:invalid {
+#form-top > #inputContainer > #inputBox #password:invalid {
     border-color: red;
 }
 
-input:focus{
+#form-top > #inputContainer > #inputBox input:focus{
     border-color: blue;
     box-shadow: 5px 5px 5px #858688;
 }
