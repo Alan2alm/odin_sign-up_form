@@ -1,0 +1,95 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(/fonts/Norse-Bold.otf);
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-side > .title-logo > .title{
+    font-family: norse-bold;
+}
+
+.title-side > .title-logo {
+    display: flex;
+    position:relative;
+    top: 15vw;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15%;
+}
+
+.title-logo > .logo {
+
+}
+
+.title-logo > .title {
+
+}
+
+.title-side > .img-info {
+    position:relative;
+    top: 38vw;
+    text-align: center;
+}
+
+.title-side{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/menu.avif);
+    background-position: absolute;
+    background-size:cover;
+    width: 30vw;
+    color: white;
+}
+
+.form-side{
+    text-overflow: ellipsis;
+    width: 65vw;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-side > #form-head {
+    padding: 2vw;
+    text-align:left;
+    justify-content: center;
+    align-content: end;
+}
+
+.form-side > form > #form-top {
+    padding: 2vw;
+    height: 50%;
+}
+
+.form-side > form > #form-bottom {
+    padding: 2vw;
+    justify-content: center;
+    align-content:baseline;
+    background-color: aqua;
+}
+
+#form-top > #inputContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+
+}
+
+#form-top > #inputContainer > #inputBox {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+
+}

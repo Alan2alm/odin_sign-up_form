@@ -4,15 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="main.js" defer></script>
 </head>
 <body>
-    <div>
-        <img src="" alt="">
-        <h1></h1>
-        <p></p>
-    </div>
-    <div>
-        
+    <div class="container">
+        <div class="title-side">
+            <div class="title-logo">
+                <img src="/images/odin.png" alt="Simplified logo of the nord god Odin" class="logo" width="50" height="50">
+                <h1 class="title">Hello</h1>
+            </div>
+            <p class="img-info">Photo by <u>Halie West</u> on <u>Unsplash</u></p>
+        </div>
+        <div class="form-side">
+            <div id="form-head">
+                <h2>This is not a real online service! You know you need something like this in your life 
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+            <form action="POST">
+                <fieldset id="form-top">
+                    <h2>Let's do this!</h2>
+                    <div id="inputContainer">
+                        <div id="inputBox">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" required>
+                        </div>
+                        <div id="inputBox">
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" required>
+                        </div>
+                    </div>
+                    <div id="inputContainer">
+                        <div id="inputBox">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div id="inputBox">
+                            <label for="last_name">PHONE NUMBER</label>
+                            <input type="number" name="last_name" id="last_name"
+                            maxlength="15" minlength="10" required>
+                        </div>
+                    </div>
+                    <div id="inputContainer">
+                        <div id="inputBox">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div id="inputBox">
+                            <label for="conf_password">CONFIRM PASSWORD</label>
+                            <input type="password" name="conf_password" id="conf_password" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="form-bottom">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </fieldset>
+            </form>
+        </div>
     </div>
 </body>
 </html>
